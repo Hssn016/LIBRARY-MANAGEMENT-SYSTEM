@@ -23,6 +23,7 @@ void main()
 
 void password()
 {   
+system("cls");
 int counter;
 gotoxy(13,2);
 for(counter=0;counter<15;counter++)
@@ -54,11 +55,6 @@ for(counter=0;counter<15;counter++)
 		printf("*");
 		
 	}
-	/*for(j=0;j<20;j++)
-	{
-		Sleep(50);
-		printf("*");
-	} */
 	gotoxy(10,7);
 	printf("Enter Password :");
 	while(ch!=13)
@@ -79,6 +75,8 @@ for(counter=0;counter<15;counter++)
 			gotoxy(10,13);
 			printf("Press any key to continue...");
 			getch();
+			system("cls");
+			mainmenu();
 			
 		} 
 		else
@@ -88,5 +86,32 @@ for(counter=0;counter<15;counter++)
 			password();
 		}
 }	
-
+void mainmenu()
+{
+int c;
+gotoxy(13,2);
+for(c=0;c<20;c++)
+{
+	printf("\xB2");
+}
+printf(" MAIN MENU ");
+for(c=0;c<20;c++)
+{
+	printf("\xB2");
+}
+gotoxy(27,7);
+printf("1. ADD BOOKS \n");
+gotoxy(27,9);
+printf("2. DELETE BOOKS \n");
+gotoxy(27,11);
+printf("3. SEARCH BOOKS \n");
+gotoxy(27,13);
+printf("4. ISSUE BOOKS \n");
+gotoxy(27,15);
+printf("5. VIEW BOOK LIST \n");
+gotoxy(27,17);
+printf("6. EDIT BOOKS RECORD \n");
+gotoxy(27,19);
+printf("7. CLOSE APPLICATION \n");
+}
 
