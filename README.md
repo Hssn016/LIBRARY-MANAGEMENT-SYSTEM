@@ -1,2 +1,3 @@
 # LIBRARY-MANAGEMENT-SYSTEM
-This is a project on library mangaement system using C language.
+This is a project on library management system using C language.
+The work on this project is in progress.
