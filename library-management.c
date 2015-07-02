@@ -6,7 +6,7 @@ void password();
 void mainmenu();
 char pwd[10]={"library4"};
 COORD coord;
-
+//function to set the coordinates and assign it to member variables of the pre defined Structure COORD.
 void gotoxy(int x,int y)
 {
 	coord.X=x;
@@ -16,11 +16,11 @@ void gotoxy(int x,int y)
 
 void main()
 {
-	system("cls");
+	system("cls");//to clear the screen using cmd
 	password();
 	getch();
 }
-
+//login page function
 void password()
 {   
 system("cls");
